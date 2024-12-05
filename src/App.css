@@ -1,0 +1,164 @@
+/* General Body Styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #1f1f1f,
+    #2e2e2e
+  ); /* Smooth gradient from darker gray to lighter dark gray */
+  color: #f9f9f9; /* Brighter text */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main App Container */
+.app {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px;
+  padding: 30px;
+  background: linear-gradient(
+    135deg,
+    #3c3c3c,
+    #2a2a2a
+  ); /* Gradient background inside the container */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #ffdd57; /* Brighter gold */
+  border-bottom: 2px solid #ffdd57;
+  padding-bottom: 10px;
+  background: linear-gradient(
+    90deg,
+    #ffdd57,
+    #ffa500
+  ); /* Gradient in title text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Sport Selector */
+.sport-selector {
+  margin-bottom: 25px;
+}
+
+.sport-selector select {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 2px solid #ffdd57; /* Brighter gold */
+  background: linear-gradient(
+    135deg,
+    #4a4a4a,
+    #3c3c3c
+  ); /* Subtle gradient for input background */
+  color: #f9f9f9; /* Brighter text */
+  outline: none;
+}
+
+.sport-selector label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #ffdd57; /* Brighter gold */
+}
+
+/* Odds List */
+.odds-list {
+  display: grid;
+  gap: 20px;
+}
+
+/* Odds Card */
+.odds-card {
+  background: linear-gradient(
+    135deg,
+    #4a4a4a,
+    #3c3c3c
+  ); /* Gradient background for odds card */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.odds-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Odds Card Headings */
+.odds-card h2 {
+  font-size: 1.6rem;
+  color: #ffdd57; /* Brighter gold */
+  margin-bottom: 10px;
+}
+
+.odds-card h3 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: #ffdd57; /* Brighter gold */
+}
+
+.odds-card h4 {
+  font-size: 1.1rem;
+  color: #ffdd57; /* Brighter gold */
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+/* Odds Card Content */
+.odds-card p {
+  font-size: 1rem;
+  color: #e0e1dd; /* Brighter content text */
+  margin: 5px 0;
+}
+
+/* Spacing for sections within the odds card */
+.odds-card div {
+  margin-top: 10px;
+  padding: 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 221, 87, 0.1),
+    rgba(255, 200, 50, 0.1)
+  ); /* Gradient background for content section */
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app {
+    width: 95%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .sport-selector select {
+    font-size: 1rem;
+  }
+
+  .odds-card {
+    padding: 15px;
+  }
+
+  .odds-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .odds-card p {
+    font-size: 0.9rem;
+  }
+}

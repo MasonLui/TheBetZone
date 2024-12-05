@@ -1,0 +1,25 @@
+/* src/components/Home.css */
+
+.home {
+  text-align: center;
+  padding: 40px;
+  background-color: #3c3c3c; /* Light gray for contrast */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  color: #ffdd57; /* Brighter gold */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffdd57; /* Gold border for separation */
+  padding-bottom: 10px;
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: #f0f0f0; /* Bright text */
+  line-height: 1.6;
+  margin-top: 20px;
+}

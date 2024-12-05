@@ -1,0 +1,71 @@
+/* src/components/Header.css */
+
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap");
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #2b2b2b; /* Lightened dark background */
+  border-bottom: 2px solid #ffdd57; /* Brighter gold */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.logo-link {
+  text-decoration: none; /* Remove underline */
+}
+
+.logo {
+  font-family: "Lobster", cursive; /* Baseball script font */
+  font-size: 3rem;
+  color: #ffdd57; /* Brighter gold */
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #e63946; /* Red for hover effect */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.nav-links li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #ffdd57; /* Brighter gold */
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #ffdd57; /* Brighter gold background */
+  color: #2b2b2b; /* Dark text for contrast */
+}
+
+.league-logo {
+  width: 60px; /* Uniform size */
+  height: 60px;
+  object-fit: contain;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.league-logo:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
